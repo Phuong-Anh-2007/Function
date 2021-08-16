@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="number" name="" id="1" placeholder="Nhập vào số thứ nhất"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name='' id="2" placeholder="Nhập vào số thứ hai"></td>
+        </tr>
+        <tr>
+            <td><button onclick="sum()">Tính tổng</button></td>
+        </tr>
+        <tr>
+            <td id="result"></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script>
+    
+    function sum() {
+        let number_1 = +document.getElementById('1').value;
+        let number_2 = +document.getElementById('2').value;
+        let result = number_2+number_1;
+        document.getElementById('result').innerHTML= 'Tổng của hai số này là: '+result;
+    }
+    
+    
+</script>

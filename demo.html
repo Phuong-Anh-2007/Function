@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <script>
+        ////Tính tổng 2 số
+        // function sum(num1, num2, num3) {
+        //     let total = num1+num2+num3;
+        //     return total;
+        // }
+        // let num1 = +prompt('Nhập số thứ nhất: ');
+        // let num2 = +prompt('Nhập số thứ hai: ');
+        // let num3 = +prompt('Nhập vào số thứ ba:');
+        // console.log(sum(num1, num2, num3));
+
+        //// Tính chu vi chữ nhật
+        // function sum(num1, num2) {
+        //     return num1+num2;
+        // }
+        // function hcn() {
+        //     return (sum(num1, num2)/2);
+        // }
+        // let num1 = +prompt('Số thứ nhất:');
+        // let num2 = +prompt('Số thứ hai:');
+        // sum(num1, num2);
+        // console.log(hcn());
+
+        function sum(start,end) {
+            let total =0;
+            for (let i=0; i<=end;i++) {
+                total+=i;
+            }
+            return total;
+        }
+
+        function main() {
+            let start = +prompt('Nhập số đầu: ');
+            let end = +prompt('Nhập số cuối:');
+            alert(sum(start,end));
+        }
+        main();
+    </script>
+</body>
+</html>
